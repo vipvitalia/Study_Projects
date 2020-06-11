@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6CE91C5-6CF8-FDA8-8A3A-527D0AD3C935" name="CITY">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:50:15 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CITY_ID" id="95C158F0-9B71-7E72-36CE-947C13126555">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:50:43 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_NAME" id="8DCA81F7-84BC-1A15-AACC-B186FFECF04F">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:50:43 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT_ID" id="7B5B2F46-2BB1-8C05-E3EC-916677942654">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:36:18 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46F646A4-AA8A-AD0A-940E-273BFC44938A" referredColumn="145B9B67-ED23-BDE6-813A-0D5E16AA822C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32DAEFF1-7BA3-4304-D5BF-46C8D8980353" name="CITY_PK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:50:43 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95C158F0-9B71-7E72-36CE-947C13126555"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E64C04C5-9180-8224-7635-058FB0695519" name="CITY_COUNTRY_FK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:37:12 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B5B2F46-2BB1-8C05-E3EC-916677942654"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

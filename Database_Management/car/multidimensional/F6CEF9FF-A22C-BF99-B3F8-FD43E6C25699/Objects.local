@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.multidimensional.MultidimensionalDesign>
+   <object objectType="Cube" objectID="A8FFB769-7B8E-4765-9149-2462C1F58703" name="Bank" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.multidimensional.Cube" propertyParentId="F6CEF9FF-A22C-BF99-B3F8-FD43E6C25699" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.multidimensional.MultidimensionalDesign>

@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.multidimensional.DPVMultidimensional" name="Multidimensional_1" id="53F6AA2C-6A33-4176-EE9C-28166001063E">
+<createdBy>vitalij</createdBy>
+<modifiedBy>vitalij</modifiedBy>
+<createdTime>2020-05-22 12:28:53 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<compactDiagram class="oracle.dbtools.crest.swingui.multidimensional.DPVCompactMultidimentional" name="Multidimensional_1 - Compact Diagram" id="49296116-9C12-9EBE-1C67-60A3465A8CC0">
+<createdBy>vitalij</createdBy>
+<modifiedBy>vitalij</modifiedBy>
+<createdTime>2020-05-22 12:28:53 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.multidimensional.TVCube" oid="A8FFB769-7B8E-4765-9149-2462C1F58703" otype="Cube" vid="B25A32D5-637B-D9F4-A29A-30071546FB29">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="250" y="129" width="110" height="110"/>
+</OView>
+</objectViews>
+</compactDiagram>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.multidimensional.TVCube" oid="A8FFB769-7B8E-4765-9149-2462C1F58703" otype="Cube" vid="8D86BB79-C2AE-D3CB-57B3-5FC7DC8AC76D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="243" y="43" width="170" height="110"/>
+</OView>
+</objectViews>
+</Diagram>

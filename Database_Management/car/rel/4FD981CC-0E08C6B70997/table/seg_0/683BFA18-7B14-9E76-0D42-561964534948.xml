@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="683BFA18-7B14-9E76-0D42-561964534948" name="RENTAL_DETAILS">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:43:27 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RENT_ID" id="C4971DB0-055E-9B6F-0D3F-5CB74A33D1F9">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:45:30 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_FROM" id="77427774-0643-2F8C-A081-2AAB3B77333F">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:45:30 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_TO" id="4E44DCF8-5E9D-469B-386C-707DA10DC15B">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:46:28 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAR_ID" id="AC64F169-5525-5931-4C7C-E52A66914D26">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:49:04 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E816ED16-CE59-3458-ECCF-C554D8B4D37B" referredColumn="D171A769-0C0E-354F-B167-0034360189E6"/>
+</associations>
+</Column>
+<Column name="CITY_TAKEN" id="1B2043F5-4A63-3133-3D5D-0C60EB901A9F">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:51:16 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03B7EF4D-ED79-2B0A-199A-D4963168B079" referredColumn="95C158F0-9B71-7E72-36CE-947C13126555"/>
+</associations>
+</Column>
+<Column name="CITY_RETURNED" id="AB53762C-1E94-2DFB-97CA-E7E55A381F12">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:56:54 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="776869B7-39D0-124F-DE6C-DDC03FA2626C" referredColumn="95C158F0-9B71-7E72-36CE-947C13126555"/>
+</associations>
+</Column>
+<Column name="INSURANCE" id="3410BA75-20AE-F738-4810-BF5DB7F83D46">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:56:54 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC3998FB-D444-48C9-FBAE-3A24A0E22118" referredColumn="0BC7C613-7296-28AD-B20B-6D49FA2568B4"/>
+</associations>
+</Column>
+<Column name="PAYMENT" id="39A1CE10-7741-02EE-5C5D-A8543823D055">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:02:16 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6646CBF6-F950-1D47-2CE0-F4E2E30ECC64" referredColumn="265410A9-0B1D-8D84-0BD3-F1FCB24FD5A7"/>
+</associations>
+</Column>
+<Column name="ISSUER_ID" id="1F2050CD-B923-F022-17B6-6C52A81A2EB1">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:09:41 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58F0DD08-3E30-D0A7-CECE-FCD7FC6AE061" referredColumn="5C6171CC-9D45-6820-F6B0-743B4B98C59D"/>
+</associations>
+</Column>
+<Column name="FEES" id="C7A255A8-F996-904B-731D-B26E1342AD2A">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:12:45 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AEFE7E4-3C7D-A392-5CA5-857527A890DC" referredColumn="447C390B-8C60-1415-F613-C922A46D5414"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E16EC3E7-15A7-D9C3-68DC-C6BAED04066F" name="RENTAL_DETAILS_PK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:45:30 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4971DB0-055E-9B6F-0D3F-5CB74A33D1F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EEE2A2F-1D19-333A-68BC-61404C802571" name="RENTAL_DETAILS_CITY_FK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:51:39 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B2043F5-4A63-3133-3D5D-0C60EB901A9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C677EDC8-5517-2AC3-85B9-715A75808B6B" name="RENTAL_DETAILS_CITY_FKv2">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:56:54 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB53762C-1E94-2DFB-97CA-E7E55A381F12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94DB8763-6042-5B0E-BAF6-865CA43CD9AD" name="RENTAL_DETAILS_FEES_FK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:07:52 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3410BA75-20AE-F738-4810-BF5DB7F83D46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A7FB789-616D-16D5-25B3-2F1B81A26F89" name="RENTAL_DETAILS_PAYMENT_FK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:08:44 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39A1CE10-7741-02EE-5C5D-A8543823D055"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39E9CD64-EB4C-E0F7-917D-DD7BC69BCAFF" name="RENTAL_DETAILS_EMPLOYEES_FK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:15:53 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F2050CD-B923-F022-17B6-6C52A81A2EB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BEA1BA7-54FE-FB30-D9CD-BBFA1C7766D5" name="RENTAL_DETAILS_CARS_FK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:31:52 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC64F169-5525-5931-4C7C-E52A66914D26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="143714D6-448A-C9A2-E607-7D16C4466611" name="RENTAL_DETAILS_FEES_FKv1">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 13:33:37 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7A255A8-F996-904B-731D-B26E1342AD2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

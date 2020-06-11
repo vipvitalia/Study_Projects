@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Cube class="oracle.dbtools.crest.model.design.multidimensional.Cube" name="Bank" directorySegmentName="seg_0" id="A8FFB769-7B8E-4765-9149-2462C1F58703">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:30:26 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<nameInOracleAW>BANK</nameInOracleAW>
+<compressedcomposites>false</compressedcomposites>
+<partitioned>true</partitioned>
+<useGlobalComposites>false</useGlobalComposites>
+<virtual>true</virtual>
+</Cube>

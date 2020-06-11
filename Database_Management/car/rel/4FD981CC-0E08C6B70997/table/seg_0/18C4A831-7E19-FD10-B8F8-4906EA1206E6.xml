@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18C4A831-7E19-FD10-B8F8-4906EA1206E6" name="DEPARTMENT">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:38:27 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEP_ID" id="DE93FF6C-8474-9F8B-9075-2EB21516CB90">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:39:05 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEP_NAME" id="D1D8382F-EEBC-3A8C-636D-B6D7D94C840B">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:39:05 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C56A705C-D444-4342-1BD6-38B62E831DC6" name="DEPARTMENT_PK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:39:05 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE93FF6C-8474-9F8B-9075-2EB21516CB90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B8E593C-ECC4-6A67-01A7-F12BE79F6D6C" name="CARS">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:35:01 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CAR_ID" id="D171A769-0C0E-354F-B167-0034360189E6">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:37:04 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="8AE4986F-2ECA-6D72-2D3A-EAE89A8624B4">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:37:04 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MILEAGE" id="7D49D318-5CC6-2346-482B-011E285F1290">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:37:04 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANUFACTURER" id="1BC3B67D-FE79-FA24-CEC1-6D64914C49F2">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:37:04 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F08C0D3-1483-5D55-A76E-962DF6B3D09F" referredColumn="816CD2DA-514F-902E-47AF-BA84E2A2584C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9FFB88DB-F76D-E61F-C621-7F32FF03A439" name="Cars_PK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:37:04 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D171A769-0C0E-354F-B167-0034360189E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A3CFD02-3398-EAE2-5AAF-F63C8D4B4DA6" name="CARS_CAR_MANUFACTURER_FK">
+<createdBy>vitalij</createdBy>
+<createdTime>2020-05-22 12:43:15 UTC</createdTime>
+<ownerDesignName>car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BC3B67D-FE79-FA24-CEC1-6D64914C49F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
