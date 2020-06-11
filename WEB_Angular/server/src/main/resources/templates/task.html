@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html layout:decorator="layout">
+<body>
+<div class="container">
+    <div layout:fragment="content">
+
+        <h2 class="display-2 my-3">Details</h2>
+        <dl class="row">
+          <dt class="col-sm-3">Title</dt>
+          <dd class="col-sm-9" th:text="${task.task_name}"></dd>
+        
+          <dt class="col-sm-3">Date</dt>
+          <dd class="col-sm-9" th:text="${#temporals.format(task.created_at, 'dd-MM-yyyy HH:mm')}"></dd>
+        
+          <dt class="col-sm-3">Amount</dt>
+          <dd class="col-sm-9" th:text="${task.amount}"></dd>
+
+          <dt class="col-sm-3">Category</dt>
+          <dd class="col-sm-9" th:text="${task.task_description}"></dd>
+
+          
+        <!--
+          <dt class="col-sm-3">Creator</dt>
+          <dd class="col-sm-9" th:text="${task.user.username}"></dd>
+        
+          <dt class="col-sm-3">Submissions</dt>
+          <dd class="col-sm-9">
+            <table class="table table-hover table-sm">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Submitter</th>
+                    <th scope="col">Submission Date</th>
+                    <th scope="col">Solution</th>
+                    <th scope="col">Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr th:each="sub : ${submissions}">
+                    <td th:text="${sub.user.username}"></td>
+                    <td th:text="${#temporals.format(sub.created_at, 'dd-MM-yyyy HH:mm')}"></td>
+                    <td>
+                        <a th:href="@{/submissions/{id}(id=${sub.id})}">Solution
+                    </td>
+                    <td th:text="${sub.grade}"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </dd>
+        -->
+        </dl>
+
+    </div>
+</div>
+</body>
+</html>
