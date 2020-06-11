@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html layout:decorator="layout">
+<body>
+<div class="container">
+    <div layout:fragment="content">
+
+        <h2 class="display-2 my-3">Submission Details</h2>
+        <dl class="row">
+        
+          <dt class="col-sm-3">User</dt>
+          <dd class="col-sm-9" th:text="${submission.user.username}"></dd>
+
+          <dt class="col-sm-3">Date</dt>
+          <dd class="col-sm-9" th:text="${#temporals.format(submission.created_at, 'dd-MM-yyyy HH:mm')}"></dd>
+
+          <dt class="col-sm-3">Last grade</dt>
+          <dd class="col-sm-9" th:text="${submission.grade}"></dd>
+
+          <dt class="col-sm-3">Evaluate with grade (0-5)</dt>
+          <dd class="col-sm-9">
+            <form action="" novalidate th:action="@{/submissions/{id}/evaluate(id=${submission.id})}" th:object="${submission}" method="post">
+                <div class="form-group">
+                    <label for="title">Grade</label>
+                    <input type="number" th:field="*{grade}" class="form-control" id="grade" required th:errorclass="is-invalid"></textarea>
+                    <div class="invalid-feedback" th:errors="*{grade}">
+                        Please provide a grade!
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Evaluate</button>
+            </form>
+          </dd>
+        
+          <dt class="col-sm-3">Solution</dt>
+          <dd class="col-sm-9" th:text="${submission.solution}"></dd>
+        
+        </dl>
+
+    </div>
+</div>
+</body>
+</html>

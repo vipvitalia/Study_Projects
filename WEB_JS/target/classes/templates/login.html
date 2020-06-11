@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html layout:decorator="layout">
+<body>
+    <div layout:fragment="content" class="card col-md-4 offset-md-4 mt-5 p-3">
+
+        <h2 class="display-6 text-center my-3" >Login</h2>
+
+        <div th:if="${param.error}">
+            Invalid username and password.
+        </div>
+        <div th:if="${param.logout}">
+            You have been logged out.
+        </div>
+
+        <form action="" novalidate th:action="@{/login}" method="post">
+
+            <h4>Login: Teacher1, Pass: 1234</h4>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" placeholder="Username" required="true" name="username">
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-control" id="passowrd" placeholder="Password" required name="password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+    </div>
+</body>
+</html>

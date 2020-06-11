@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html layout:decorator="layout">
+<body>
+<div class="container">
+    <div layout:fragment="content">
+
+        <h2 class="display-2 my-3">Created tasks</h2>
+        <p><a class="btn btn-primary" th:href="@{/tasks/new_task}" role="button">New task</a></p>
+        <!-- <p><a class="btn btn-primary" th:href="@{/submissions/new_submit}" role="button">Submit solution</a></p> -->
+        <br>
+        <h4 th:text="${title}"></h4>
+        <div class="list-group">
+        <a th:href="@{/tasks/{id}(id=${task.id})}" th:each="task : ${tasks}" class="list-group-item list-group-item-action list-group-item-success">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <h5 class="mb-1" th:text="${task.task_name}"></h5>
+            </div>
+            <small>
+                <i class="fas fa-calendar-alt">Created:
+                    <span th:text="${#temporals.format(task.created_at, 'dd-MM-yyyy HH:mm')}"></span>
+                </i>
+                <br>
+                <i class="fas fa-comment"></i> <span class="badge badge-light badge-pill">Submissions: <span th:text="${task.getSubmissionsCount()}"></span></span>
+            </small>
+        </a>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
