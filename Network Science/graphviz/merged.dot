@@ -1,0 +1,145 @@
+graph Merged {
+  subgraph clusterH {
+    style=filled;
+    color=blue;
+    node [style=filled, color=blue];
+    label = "The clique";
+    h1 -- h2;
+    h1 -- h3;
+    h1 -- h4;
+    h1 -- h5;
+    h1 -- h6;
+    h1 -- h7;
+    h1 -- h8;
+    h1 -- h9;
+    h1 -- h10;
+    h2 -- h1;
+    h2 -- h3;
+    h2 -- h4;
+    h2 -- h5;
+    h2 -- h6;
+    h2 -- h7;
+    h2 -- h8;
+    h2 -- h9;
+    h2 -- h10;
+    h3 -- h1;
+    h3 -- h2;
+    h3 -- h4;
+    h3 -- h5;
+    h3 -- h6;
+    h3 -- h7;
+    h3 -- h8;
+    h3 -- h9;
+    h3 -- h10;
+    h4 -- h1;
+    h4 -- h2;
+    h4 -- h3;
+    h4 -- h5;
+    h4 -- h6;
+    h4 -- h7;
+    h4 -- h8;
+    h4 -- h9;
+    h4 -- h10;
+    h5 -- h1;
+    h5 -- h2;
+    h5 -- h3;
+    h5 -- h4;
+    h5 -- h6;
+    h5 -- h7;
+    h5 -- h8;
+    h5 -- h9;
+    h5 -- h10;
+    h6 -- h1;
+    h6 -- h2;
+    h6 -- h3;
+    h6 -- h4;
+    h6 -- h5;
+    h6 -- h7;
+    h6 -- h8;
+    h6 -- h9;
+    h6 -- h10;
+    h7 -- h1;
+    h7 -- h2;
+    h7 -- h3;
+    h7 -- h4;
+    h7 -- h5;
+    h7 -- h6;
+    h7 -- h8;
+    h7 -- h9;
+    h7 -- h10;
+    h8 -- h1;
+    h8 -- h2;
+    h8 -- h3;
+    h8 -- h4;
+    h8 -- h5;
+    h8 -- h6;
+    h8 -- h7;
+    h8 -- h9;
+    h8 -- h10;
+    h9 -- h1;
+    h9 -- h2;
+    h9 -- h3;
+    h9 -- h4;
+    h9 -- h5;
+    h9 -- h6;
+    h9 -- h7;
+    h9 -- h8;
+    h9 -- h10;
+    h10 -- h1;
+    h10 -- h2;
+    h10 -- h3;
+    h10 -- h4;
+    h10 -- h5;
+    h10 -- h6;
+    h10 -- h7;
+    h10 -- h8;
+    h10 -- h9;
+  }
+  
+  subgraph clusterJ {
+    style=filled;
+    color=red;
+    node [style=filled, color=red];
+    label = "The Star";
+    j3 -- j1;
+    j3 -- j2;
+    j3 -- j4;
+    j3 -- j5;
+    j3 -- j6;
+    j3 -- j7;
+    j3 -- j8;
+    j3 -- j9;
+    j3 -- j10;
+    j3 -- 11;
+    j3 -- j12;
+    label = "process #2";
+  }
+  
+  subgraph clusterM {
+    style=filled;
+    color=green;
+    node [style=filled, color=green];
+    label = "The Ring I";
+    m1 -- m2 -- m3 -- m4 -- m5 -- m1;
+  }
+  
+  subgraph clusterQ{
+    style=filled;
+    color=brown;
+    node [style=filled, color=brown];
+    label = "The Ring II";
+    q1 -- q2 -- q3 -- q4 -- q5 -- q6 -- q7 -- q8 -- q9 -- q1;
+  }
+  
+  subgraph clusterS {
+    style=filled;
+    color=lightgrey;
+    node [style=filled, color=grey];
+    label = "The Ring III";
+    s1 -- s2 -- s3 -- s4 -- s5 -- s6 -- s7 -- s8 -- s9 -- s10 -- s11 -- s1;
+  }
+  j8 -- h5;
+  s9 -- h8;
+  m1 -- h3;
+  h2 -- q3;
+}
